@@ -47,7 +47,6 @@ function App() {
         <button onClick={reset}>Reset Timeout</button>
       </div> */}
 
-
       {/* useArray */}
       <div>
         <div>{array.join(", ")}</div>
