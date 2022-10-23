@@ -20,7 +20,7 @@ function App() {
   useUpdateLogger(name)
   const elementRef = useRef()
   const hovered = useHover(elementRef)
-  const [id, setId] = useState(1)
+  // const [id, setId] = useState(1)
   // const { loading, error, value } = useFetch(
   //   `https://jsonplaceholder.typicode.com/todos/${id}`,
   //   {},
