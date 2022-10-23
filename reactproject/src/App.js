@@ -74,7 +74,7 @@ function App() {
       />
 
       {/* useFetch */}
-      <div>
+      {/* <div>
         <div>{id}</div>
         <button onClick={() => setId(currentId => currentId + 1)}>
           Increment ID
@@ -82,7 +82,7 @@ function App() {
         <div>Loading: {loading.toString()}</div>
         <div>{JSON.stringify(error, null, 2)}</div>
         <div>{JSON.stringify(value, null, 2)}</div>
-      </div>
+      </div> */}
 
     </>
   )
