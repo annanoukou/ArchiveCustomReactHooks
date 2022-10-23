@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import { useRef } from "react"
 import useLocalStorage from './useLocalStorage';
 import useUpdateLogger from './useUpdateLogger';
-import useToggle from "./useToggle"
+// import useToggle from "./useToggle"
 // import useTimeout from "./useTimeout"
 import useArray from "./useArray"
 import useHover from "./useHover"
-import useFetch from "./useFetch"
+// import useFetch from "./useFetch"
 
  
 function App() {
   const [name, setName] = useLocalStorage('name', '')
   // const [value, toggleValue] = useToggle(false)
-  const [count, setCount] = useState(10)
+  // const [count, setCount] = useState(10)
   // const { clear, reset } = useTimeout(() => setCount(0), 1000)
   const { array, set, push, remove, filter, update, clear } = useArray([
     1, 2, 3, 4, 5, 6,
@@ -21,11 +21,11 @@ function App() {
   const elementRef = useRef()
   const hovered = useHover(elementRef)
   const [id, setId] = useState(1)
-  const { loading, error, value } = useFetch(
-    `https://jsonplaceholder.typicode.com/todos/${id}`,
-    {},
-    [id]
-  )
+  // const { loading, error, value } = useFetch(
+  //   `https://jsonplaceholder.typicode.com/todos/${id}`,
+  //   {},
+  //   [id]
+  // )
 
   return (
     <>
