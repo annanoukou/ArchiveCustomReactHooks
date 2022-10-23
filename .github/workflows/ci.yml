@@ -35,15 +35,15 @@ jobs:
       run: |
         cd reactproject
         npm ci
-    - name: Install dependencies    
+    - name: Build dependencies    
       run: |
         cd reactproject
         npm run build --if-present
-    - name: Install dependencies
+    - name: Test
       run: |
         cd reactproject
         npm run test
-    - name: Install dependencies
+    - name: Start
       run: |
         cd reactproject
         npm start &
