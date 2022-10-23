@@ -33,14 +33,18 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: |
+        cd react_project_2
         npm ci
     - name: Install dependencies    
       run: |
+        cd react_project_2
         npm run build --if-present
     - name: Install dependencies
       run: |
+        cd react_project_2
         npm run test
     - name: Install dependencies
       run: |
+        cd react_project_2
         npm start &
         npx wait-on --timeout 60000
