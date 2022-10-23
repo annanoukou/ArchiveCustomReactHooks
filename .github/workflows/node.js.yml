@@ -33,15 +33,15 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
     - run: |
-        cd my-app
+        cd ArchiveCustomReactHooks 
         npm ci
     - run: |
-        cd my-app
+        cd ArchiveCustomReactHooks
         npm run build --if-present
     - run: |
-        cd my-app
+        cd ArchiveCustomReactHooks
         npm run test
     - run: |
-        cd my-app
+        cd ArchiveCustomReactHooks
         npm start &
         npx wait-on --timeout 60000
